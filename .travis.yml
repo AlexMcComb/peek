@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: AiQ6axvc/kHX/3O5BICwPHgJwNo3mjRyBCoWvl2aZ0RVpjS3LvWLpqKcZiDKc0YApavIbt7wOTF9MTN35wOEF97myDRZIeoY43+57cCFLvfEuLbCrBNw7pXCXxDnlf1iYZxX+fLzRsppIGB4UgrLbJiq3gGAkm+3smo/HHxE5wuULhXd1baGGhKRpHYPDG4sTnk4HaBCeBbKlmAznt7WnJX0c/WLd0KJp2LJddEtzWOHswWusf1lDH9ni3EQZEGQMTmo/41aoPv8wsDo3TCCASXfVCK0yjWLC6ESnU/yaGenlvlLYXGgUChRTrJTQX+wgNyUUykLxhWhPSix1m7zp4OYu90zBUQsa4e6gZ76K05t5ZT/FU4UvZwrgBnNaJvhibj0qgY11qZ6PlFPBrnkpt+0e02EYho1ixTdfqe2b0WpeJeRcbMCFHvLVefgg2p0KlXwJuNAy3rfB+lkf1Mqe2yh2x6XvL53CBIAjKcwhAywqPa3eN5IFoZUKQqGQgUWHUb6iCmLygkkplUn5l0r6ioGCbmDv7A0PQ4QcyQon0PNdqODHMAuTz6I/ps9P8YvXWJvdSr9gcK6n/ywvkLgydj0e0WeURiWCsWqDXR2bh4Soegyn3kWgQHBbFVoj53SkiSnV+Kb+IUxctQ1mwB2sGqnpMSDJQ1xJCcUDvka1v4=
+  app: y
+  on:
+    repo: AlexMcComb/peek
